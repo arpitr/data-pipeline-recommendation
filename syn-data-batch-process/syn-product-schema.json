@@ -1,147 +1,171 @@
 {
-        "namespace": "product",
-        "name": "product",
-        "type": "record",
-        "fields": [
-                {
-                  "name": "sku",
-                  "type": "string"
-                },
-                {
-                  "name": "product_name",
-                  "type": "string"
-                },
-                {
-                  "name": "product_description",
-                  "type": "int"
-                },
-                {
-                  "name": "product_price",
-                  "type": "string"
-                }
-         ],
-         "arg.properties": {
-           "options": [
-                { "sku": "sku-1",
-                  "product_name": 6011601160116611,
-                  "product_description": 832,
-                  "product_price": "12/27"
-                },
-                { "sku": "sku-2",
-                  "product_name": 6011111111111117,
-                  "product_description": 833,
-                  "product_price": "12/26"
-                },
-                { "sku": "sku-3",
-                  "product_name": 6011000990139424,
-                  "product_description": 348,
-                  "product_price": "12/27"
-                },
-                { "sku": "sku-4",
-                  "product_name": 3530111333300000,
-                  "product_description": 288,
-                  "product_price": "11/27"
-                },
-                { "sku": "sku-5",
-                  "product_name": 3566002020360505,
-                  "product_description": 558,
-                  "product_price": "11/27"
-                },
-                { "sku": "sku-6",
-                  "product_name": 5431111111111111,
-                  "product_description": 383,
-                  "product_price": "11/26"
-                },
-                { "sku": "sku-7",
-                  "product_name": 5555555555554444,
-                  "product_description": 273,
-                  "product_price": "10/27"
-                },
-                { "sku": "sku-8",
-                  "product_name": 5105105105105100,
-                  "product_description": 663,
-                  "product_price": "10/27"
-                },
-                { "sku": "sku-9",
-                  "product_name": 4111111111111111, 
-                  "product_description": 822,
-                  "product_price": "10/26"
-                },
-                { "sku": "sku-10",
-                  "product_name": 4242424242424242, 
-                  "product_description": 190,
-                  "product_price": "09/27"
-                },
-                { "sku": "sku-11",
-                  "product_name": 4000056655665556, 
-                  "product_description": 729,
-                  "product_price": "09/26"
-                },
-                { "sku": "sku-12",
-                  "product_name": 5555555555554444, 
-                  "product_description": 289,
-                  "product_price": "08/27"
-                },
-                { "sku": "sku-13",
-                  "product_name": 2223003122003222, 
-                  "product_description": 115,
-                  "product_price": "08/26"
-                },
-                { "sku": "sku-14",
-                  "product_name": 5200828282828210, 
-                  "product_description": 927,
-                  "product_price": "08/27"
-                },
-                { "sku": "sku-15",
-                  "product_name": 5105105105105100, 
-                  "product_description": 329,
-                  "product_price": "07/27"
-                },
-                { "sku": "sku-16",
-                  "product_name": 6200000000000005,
-                  "product_description": 727,
-                  "product_price": "06/27"
-                },
-                { "sku": "sku-17",
-                  "product_name": 3056930009020004, 
-                  "product_description": 563,
-                  "product_price": "05/27"
-                },
-                { "sku": "sku-18",
-                  "product_name": 4000000760000002, 
-                  "product_description": 922,
-                  "product_price": "04/27"
-                },
-                { "sku": "sku-19",
-                  "product_name": 4000001240000000, 
-                  "product_description": 293,
-                  "product_price": "03/27"
-                },
-                { "sku": "sku-20",
-                  "product_name": 4000004840008001, 
-                  "product_description": 779,
-                  "product_price": "02/27"
-                },
-                { "sku": "sku-21",
-                  "product_name": 4000002500003155, 
-                  "product_description": 443,
-                  "product_price": "02/26"
-                },
-                { "sku": "sku-22",
-                  "product_name": 4000002760003184, 
-                  "product_description": 487,
-                  "product_price": "06/27"
-                },
-                { "sku": "sku-23",
-                  "product_name": 4000008260003178, 
-                  "product_description": 663,
-                  "product_price": "01/26"
-                },
-                { "sku": "sku-24",
-                  "product_name": 4000008260003179,
-                  "product_description": 723,
-                  "product_price": "01/26"
-                }
-            ]
-         }
+  "namespace": "product",
+  "name": "product",
+  "type": "record",
+  "fields": [
+    {
+      "name": "sku",
+      "type": "string"
+    },
+    {
+      "name": "product_name",
+      "type": "string"
+    },
+    {
+      "name": "product_description",
+      "type": "string"
+    },
+    {
+      "name": "product_price",
+      "type": "double"
+    }
+  ],
+  "arg.properties": {
+    "options": [
+      {
+        "sku": "sku-1",
+        "product_name": "Apple iPhone 16",
+        "product_description": "Latest iPhone model from Apple with advanced features.",
+        "product_price": 1199.99
+      },
+      {
+        "sku": "sku-2",
+        "product_name": "Samsung Galaxy S25",
+        "product_description": "Flagship Samsung smartphone with high-end camera.",
+        "product_price": 1099.99
+      },
+      {
+        "sku": "sku-3",
+        "product_name": "OnePlus 13 Pro",
+        "product_description": "Premium OnePlus phone with fast charging and AMOLED display.",
+        "product_price": 899.99
+      },
+      {
+        "sku": "sku-4",
+        "product_name": "Sony WH-1000XM6",
+        "product_description": "Noise-cancelling wireless headphones from Sony.",
+        "product_price": 399.99
+      },
+      {
+        "sku": "sku-5",
+        "product_name": "Dell XPS 15",
+        "product_description": "High-performance Dell laptop with InfinityEdge display.",
+        "product_price": 1599.99
+      },
+      {
+        "sku": "sku-6",
+        "product_name": "Apple iPad Air",
+        "product_description": "Lightweight and powerful tablet from Apple.",
+        "product_price": 699.99
+      },
+      {
+        "sku": "sku-7",
+        "product_name": "Amazon Echo Dot",
+        "product_description": "Smart speaker with Alexa voice assistant.",
+        "product_price": 49.99
+      },
+      {
+        "sku": "sku-8",
+        "product_name": "HP Spectre x360",
+        "product_description": "Convertible HP laptop with touch screen.",
+        "product_price": 1299.99
+      },
+      {
+        "sku": "sku-9",
+        "product_name": "Sony Bravia 55\"",
+        "product_description": "55-inch 4K Ultra HD smart TV from Sony.",
+        "product_price": 999.99
+      },
+      {
+        "sku": "sku-10",
+        "product_name": "Apple Watch Series 9",
+        "product_description": "Latest Apple smartwatch with health tracking.",
+        "product_price": 499.99
+      },
+      {
+        "sku": "sku-11",
+        "product_name": "Bose QuietComfort Earbuds",
+        "product_description": "Wireless earbuds with noise cancellation from Bose.",
+        "product_price": 299.99
+      },
+      {
+        "sku": "sku-12",
+        "product_name": "Samsung Galaxy Tab S9",
+        "product_description": "Samsung tablet with high-resolution display.",
+        "product_price": 799.99
+      },
+      {
+        "sku": "sku-13",
+        "product_name": "GoPro Hero 12",
+        "product_description": "Action camera for adventure and sports.",
+        "product_price": 449.99
+      },
+      {
+        "sku": "sku-14",
+        "product_name": "Apple MacBook Air M3",
+        "product_description": "Ultra-thin Apple laptop with M3 chip.",
+        "product_price": 1299.99
+      },
+      {
+        "sku": "sku-15",
+        "product_name": "JBL Flip 6 Speaker",
+        "product_description": "Portable Bluetooth speaker from JBL.",
+        "product_price": 129.99
+      },
+      {
+        "sku": "sku-16",
+        "product_name": "Canon EOS R8",
+        "product_description": "Mirrorless camera for professional photography.",
+        "product_price": 1799.99
+      },
+      {
+        "sku": "sku-17",
+        "product_name": "Microsoft Surface Pro 9",
+        "product_description": "Versatile 2-in-1 laptop from Microsoft.",
+        "product_price": 1399.99
+      },
+      {
+        "sku": "sku-18",
+        "product_name": "Google Pixel 8",
+        "product_description": "Google smartphone with pure Android experience.",
+        "product_price": 799.99
+      },
+      {
+        "sku": "sku-19",
+        "product_name": "Lenovo Yoga Slim 7",
+        "product_description": "Slim and lightweight laptop from Lenovo.",
+        "product_price": 1099.99
+      },
+      {
+        "sku": "sku-20",
+        "product_name": "Oppo Reno 11",
+        "product_description": "Oppo smartphone with advanced camera features.",
+        "product_price": 699.99
+      },
+      {
+        "sku": "sku-21",
+        "product_name": "Asus ROG Phone 8",
+        "product_description": "Gaming smartphone from Asus with high refresh rate.",
+        "product_price": 999.99
+      },
+      {
+        "sku": "sku-22",
+        "product_name": "Realme Pad X",
+        "product_description": "Affordable tablet from Realme.",
+        "product_price": 299.99
+      },
+      {
+        "sku": "sku-23",
+        "product_name": "Philips Hue Starter Kit",
+        "product_description": "Smart lighting kit with color-changing bulbs.",
+        "product_price": 199.99
+      },
+      {
+        "sku": "sku-24",
+        "product_name": "Mi Smart Band 8",
+        "product_description": "Fitness tracker with heart rate monitor.",
+        "product_price": 49.99
+      }
+    ]
+  }
 }
