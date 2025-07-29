@@ -1,0 +1,171 @@
+{
+  "namespace": "product",
+  "name": "product",
+  "type": "record",
+  "fields": [
+    {
+      "name": "sku",
+      "type": "string"
+    },
+    {
+      "name": "product_name",
+      "type": "string"
+    },
+    {
+      "name": "product_description",
+      "type": "string"
+    },
+    {
+      "name": "product_price",
+      "type": "double"
+    }
+  ],
+  "arg.properties": {
+    "options": [
+      {
+        "sku": "sku-1",
+        "product_name": "Apple iPhone 16",
+        "product_description": "Latest iPhone model from Apple with advanced features.",
+        "product_price": 1199.99
+      },
+      {
+        "sku": "sku-2",
+        "product_name": "Samsung Galaxy S25",
+        "product_description": "Flagship Samsung smartphone with high-end camera.",
+        "product_price": 1099.99
+      },
+      {
+        "sku": "sku-3",
+        "product_name": "OnePlus 13 Pro",
+        "product_description": "Premium OnePlus phone with fast charging and AMOLED display.",
+        "product_price": 899.99
+      },
+      {
+        "sku": "sku-4",
+        "product_name": "Sony WH-1000XM6",
+        "product_description": "Noise-cancelling wireless headphones from Sony.",
+        "product_price": 399.99
+      },
+      {
+        "sku": "sku-5",
+        "product_name": "Dell XPS 15",
+        "product_description": "High-performance Dell laptop with InfinityEdge display.",
+        "product_price": 1599.99
+      },
+      {
+        "sku": "sku-6",
+        "product_name": "Apple iPad Air",
+        "product_description": "Lightweight and powerful tablet from Apple.",
+        "product_price": 699.99
+      },
+      {
+        "sku": "sku-7",
+        "product_name": "Amazon Echo Dot",
+        "product_description": "Smart speaker with Alexa voice assistant.",
+        "product_price": 49.99
+      },
+      {
+        "sku": "sku-8",
+        "product_name": "HP Spectre x360",
+        "product_description": "Convertible HP laptop with touch screen.",
+        "product_price": 1299.99
+      },
+      {
+        "sku": "sku-9",
+        "product_name": "Sony Bravia 55\"",
+        "product_description": "55-inch 4K Ultra HD smart TV from Sony.",
+        "product_price": 999.99
+      },
+      {
+        "sku": "sku-10",
+        "product_name": "Apple Watch Series 9",
+        "product_description": "Latest Apple smartwatch with health tracking.",
+        "product_price": 499.99
+      },
+      {
+        "sku": "sku-11",
+        "product_name": "Bose QuietComfort Earbuds",
+        "product_description": "Wireless earbuds with noise cancellation from Bose.",
+        "product_price": 299.99
+      },
+      {
+        "sku": "sku-12",
+        "product_name": "Samsung Galaxy Tab S9",
+        "product_description": "Samsung tablet with high-resolution display.",
+        "product_price": 799.99
+      },
+      {
+        "sku": "sku-13",
+        "product_name": "GoPro Hero 12",
+        "product_description": "Action camera for adventure and sports.",
+        "product_price": 449.99
+      },
+      {
+        "sku": "sku-14",
+        "product_name": "Apple MacBook Air M3",
+        "product_description": "Ultra-thin Apple laptop with M3 chip.",
+        "product_price": 1299.99
+      },
+      {
+        "sku": "sku-15",
+        "product_name": "JBL Flip 6 Speaker",
+        "product_description": "Portable Bluetooth speaker from JBL.",
+        "product_price": 129.99
+      },
+      {
+        "sku": "sku-16",
+        "product_name": "Canon EOS R8",
+        "product_description": "Mirrorless camera for professional photography.",
+        "product_price": 1799.99
+      },
+      {
+        "sku": "sku-17",
+        "product_name": "Microsoft Surface Pro 9",
+        "product_description": "Versatile 2-in-1 laptop from Microsoft.",
+        "product_price": 1399.99
+      },
+      {
+        "sku": "sku-18",
+        "product_name": "Google Pixel 8",
+        "product_description": "Google smartphone with pure Android experience.",
+        "product_price": 799.99
+      },
+      {
+        "sku": "sku-19",
+        "product_name": "Lenovo Yoga Slim 7",
+        "product_description": "Slim and lightweight laptop from Lenovo.",
+        "product_price": 1099.99
+      },
+      {
+        "sku": "sku-20",
+        "product_name": "Oppo Reno 11",
+        "product_description": "Oppo smartphone with advanced camera features.",
+        "product_price": 699.99
+      },
+      {
+        "sku": "sku-21",
+        "product_name": "Asus ROG Phone 8",
+        "product_description": "Gaming smartphone from Asus with high refresh rate.",
+        "product_price": 999.99
+      },
+      {
+        "sku": "sku-22",
+        "product_name": "Realme Pad X",
+        "product_description": "Affordable tablet from Realme.",
+        "product_price": 299.99
+      },
+      {
+        "sku": "sku-23",
+        "product_name": "Philips Hue Starter Kit",
+        "product_description": "Smart lighting kit with color-changing bulbs.",
+        "product_price": 199.99
+      },
+      {
+        "sku": "sku-24",
+        "product_name": "Mi Smart Band 8",
+        "product_description": "Fitness tracker with heart rate monitor.",
+        "product_price": 49.99
+      }
+    ]
+  }
+}
