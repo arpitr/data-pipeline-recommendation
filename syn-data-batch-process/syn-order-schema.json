@@ -1,0 +1,293 @@
+{
+  "namespace": "order",
+  "name": "order",
+  "type": "record",
+  "fields": [
+    {
+      "name": "order_id",
+      "type": {
+        "type": "int",
+        "arg.properties": {
+          "iteration": {
+            "start": 1000,
+            "step": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "coupon_code",
+      "type": {
+        "type": "int",
+        "arg.properties": {
+          "range": {
+            "min": 1000,
+            "max": 2000
+          }
+        }
+      }
+    },
+    {
+      "name": "date",
+      "type": {
+        "type": "int",
+        "logicalType": "date",
+        "arg.properties": {
+          "range": {
+            "min": 18000,
+            "max": 19000
+          }
+        }
+      }
+    },
+    {
+      "name": "status",
+      "type": {
+        "type": "string",
+        "arg.properties": {
+          "options": [
+            "accepted"
+          ]
+        }
+      }
+    },
+    {
+      "name": "customer_id",
+      "type": {
+        "type": "string",
+        "arg.properties": {
+          "options": [
+            "01a429f8-f576-4d9b-8d0e-4d5e8ef37e09",
+            "2bca6dfc-997c-4176-b187-93899775bafc",
+            "8c94b728-9b9c-4a02-8c0f-155e715d2fcf",
+            "ba889f52-afb8-4651-b012-7464b4aa4b15",
+            "b523f7f3-0338-4f1f-a951-a387beeb8b6a",
+            "e2249330-c07a-4796-95c8-a90523ffe210",
+            "b1949e13-2502-429d-b6ce-b5e60803d9d0",
+            "bbb7249e-b197-4440-935d-8e952743f465",
+            "da8e3b18-8e2b-43f5-86c1-2e5a84094be5",
+            "ddbf0216-8700-4c13-a688-e40fa7f68a5c",
+            "cbd9a0e9-d427-44c0-a50c-4118f4c8da87",
+            "93b0afaf-6559-4501-8413-d02581393f8d",
+            "530a2dc0-1905-4dbc-b321-fa76c3dd2f47",
+            "940257a4-9ea0-4118-8e97-b1427f3afa59",
+            "fd67d612-ad15-42f9-9402-e818689f764f",
+            "2e028c7c-a0af-49ad-b115-140b96fca52c",
+            "51a493f7-f244-4af7-bad7-1a38bd4b6368",
+            "25ca3929-17c6-4839-a25f-454c150defd5"
+        ]
+        }
+      }
+    },
+    {
+      "name": "order_lines",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "order_line",
+          "type": "record",
+          "arg.properties": {
+            "options": [
+              {
+                "sku": "sku-1",
+                "product_price": 1199.99,
+                "product_category": "Smartphone",
+                "quantity": 2,
+                "net_order_price": 2399.98
+              },
+              {
+                "sku": "sku-2",
+                "product_price": 1099.99,
+                "product_category": "Smartphone",
+                "quantity": 1,
+                "net_order_price": 1099.99
+              },
+              {
+                "sku": "sku-3",
+                "product_price": 899.99,
+                "product_category": "Smartphone",
+                "quantity": 3,
+                "net_order_price": 2699.97
+              },
+              {
+                "sku": "sku-4",
+                "product_price": 399.99,
+                "product_category": "Headphones",
+                "quantity": 2,
+                "net_order_price": 799.98
+              },
+              {
+                "sku": "sku-5",
+                "product_price": 1599.99,
+                "product_category": "Laptop",
+                "quantity": 1,
+                "net_order_price": 1599.99
+              },
+              {
+                "sku": "sku-6",
+                "product_price": 699.99,
+                "product_category": "Tablet",
+                "quantity": 2,
+                "net_order_price": 1399.98
+              },
+              {
+                "sku": "sku-7",
+                "product_price": 49.99,
+                "product_category": "Smart Speaker",
+                "quantity": 4,
+                "net_order_price": 199.96
+              },
+              {
+                "sku": "sku-8",
+                "product_price": 1299.99,
+                "product_category": "Laptop",
+                "quantity": 1,
+                "net_order_price": 1299.99
+              },
+              {
+                "sku": "sku-9",
+                "product_price": 999.99,
+                "product_category": "Television",
+                "quantity": 2,
+                "net_order_price": 1999.98
+              },
+              {
+                "sku": "sku-10",
+                "product_price": 499.99,
+                "product_category": "Smartwatch",
+                "quantity": 3,
+                "net_order_price": 1499.97
+              },
+              {
+                "sku": "sku-11",
+                "product_price": 299.99,
+                "product_category": "Earbuds",
+                "quantity": 2,
+                "net_order_price": 599.98
+              },
+              {
+                "sku": "sku-12",
+                "product_price": 799.99,
+                "product_category": "Tablet",
+                "quantity": 1,
+                "net_order_price": 799.99
+              },
+              {
+                "sku": "sku-13",
+                "product_price": 449.99,
+                "product_category": "Camera",
+                "quantity": 2,
+                "net_order_price": 899.98
+              },
+              {
+                "sku": "sku-14",
+                "product_price": 1299.99,
+                "product_category": "Laptop",
+                "quantity": 1,
+                "net_order_price": 1299.99
+              },
+              {
+                "sku": "sku-15",
+                "product_price": 129.99,
+                "product_category": "Bluetooth Speaker",
+                "quantity": 3,
+                "net_order_price": 389.97
+              },
+              {
+                "sku": "sku-16",
+                "product_price": 1799.99,
+                "product_category": "Camera",
+                "quantity": 1,
+                "net_order_price": 1799.99
+              },
+              {
+                "sku": "sku-17",
+                "product_price": 1399.99,
+                "product_category": "Laptop",
+                "quantity": 2,
+                "net_order_price": 2799.98
+              },
+              {
+                "sku": "sku-18",
+                "product_price": 799.99,
+                "product_category": "Smartphone",
+                "quantity": 1,
+                "net_order_price": 799.99
+              },
+              {
+                "sku": "sku-19",
+                "product_price": 1099.99,
+                "product_category": "Laptop",
+                "quantity": 1,
+                "net_order_price": 1099.99
+              },
+              {
+                "sku": "sku-20",
+                "product_price": 699.99,
+                "product_category": "Smartphone",
+                "quantity": 2,
+                "net_order_price": 1399.98
+              },
+              {
+                "sku": "sku-21",
+                "product_price": 999.99,
+                "product_category": "Smartphone",
+                "quantity": 1,
+                "net_order_price": 999.99
+              },
+              {
+                "sku": "sku-22",
+                "product_price": 299.99,
+                "product_category": "Tablet",
+                "quantity": 2,
+                "net_order_price": 599.98
+              },
+              {
+                "sku": "sku-23",
+                "product_price": 199.99,
+                "product_category": "Smart Home",
+                "quantity": 1,
+                "net_order_price": 199.99
+              },
+              {
+                "sku": "sku-24",
+                "product_price": 49.99,
+                "product_category": "Fitness Tracker",
+                "quantity": 5,
+                "net_order_price": 249.95
+              }
+            ]
+          },
+          "fields": [
+            {
+              "name": "sku",
+              "type": "string"
+            },
+            {
+              "name": "product_price",
+              "type": "double"
+            },
+            {
+              "name": "product_category",
+              "type": "string"
+            },
+            {
+              "name": "quantity",
+              "type": "int"
+            },
+            {
+              "name": "net_order_price",
+              "type": "double"
+            }
+          ]
+        },
+        "arg.properties": {
+          "length": {
+            "min": 1,
+            "max": 5
+          }
+        }
+      }
+    }
+  ]
+}
